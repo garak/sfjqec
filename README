@@ -1,0 +1,9 @@
+sfjqec
+======
+
+Questo progetto symfony, basato su symfony 1.4 e Propel 1.5, è stato creato a scopo
+didattico, per una presentazione tenuta alla riunione del PUG Roma del 24 novembre 2010.
+Lo scopo di questo codice è in generale mostrare come integrare correttamente Javascript
+e PHP, con particolare riferimento a symfony e jQuery.
+Il progetto mostra un semplicissimo e-commerce, da cui il nome: sfjqec è formato da
+sf (symfony) + jq (jQuery) + ec (e-commerce).

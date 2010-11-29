@@ -1,0 +1,106 @@
+body {
+  background: #eee;
+  color: #111;
+  font-family: Ubuntu, Trebuchet MS, sans-serif;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+a {
+  text-decoration: none;
+  text-shadow: 0 0 0 #000;
+}
+
+ul#products, div#cart ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div#filters {
+  border: 3px solid #000;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 2px #ccc;
+  -moz-box-shadow: 3px 3px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 2px #ccc;
+}
+
+div#filters th {
+  text-align: left;
+}
+
+div#filters input[type="text"] {
+  width: 88px;
+}
+
+ul#products {
+  border: 3px solid #000;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  box-shadow: 3px 3px 2px #ccc;
+  -moz-box-shadow: 3px 3px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 2px #ccc;
+}
+
+ul#products li {
+  border: 1px solid #ccc;
+  float: left;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+}
+
+ul#products li span.price {
+  display: block;
+  margin: 5px 0 0;
+}
+
+ul#products li a.add {
+  display: block;
+  margin: 3px 0 0;
+}
+
+div#cart {
+  border: 3px solid #000;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 2px #ccc;
+  -moz-box-shadow: 3px 3px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 2px #ccc;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+div#cart ul {
+ margin: 10px 0;
+}
+
+div#cart ul li a.increase, div#cart ul li a.decrease{
+ border: 1px solid #ccc;
+ padding: 0 3px;
+}
+
+div#cart a#empty_cart {
+  display: block;
+  margin: 10px 0 0;
+}
+
+div#ajax {
+  display: none;
+  background: #b91d4c url('/images/loading.gif') center center no-repeat;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  z-index: 100;
+  width: 60px;
+  height: 50px;
+  display: none;
+}

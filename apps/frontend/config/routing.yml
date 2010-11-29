@@ -1,0 +1,39 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+filter:
+  url:   /filter
+  param: { module: default, action: filter }
+
+cart_add:
+  url:     /cart/add/:slug
+  param:   { module: default, action: cartAdd }
+  class:   sfPropel15Route
+  options: { model: Product, type: object }
+
+cart_remove:
+  url:     /cart/remove/:slug
+  param:   { module: default, action: cartRemove }
+  class:   sfPropel15Route
+  options: { model: Product, type: object }
+
+cart_increase:
+  url:     /cart/increase/:slug
+  param:   { module: default, action: cartIncrease }
+  class:   sfPropel15Route
+  options: { model: Product, type: object }
+
+cart_decrease:
+  url:     /cart/decrease/:slug
+  param:   { module: default, action: cartDecrease }
+  class:   sfPropel15Route
+  options: { model: Product, type: object }
+
+cart_empty:
+  url:   /cart/empty
+  param: { module: default, action: cartEmpty }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }

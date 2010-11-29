@@ -1,0 +1,45 @@
+Product:
+  tshirt:
+    name:        T-shirt
+    category_id: wearable
+    price:       15.99
+  cap:
+    name:        cap
+    category_id: wearable
+    price:       6.90
+  pants:
+    name:        pants
+    category_id: wearable
+    price:       13.99
+  jacket:
+    name:        jacket
+    category_id: wearable
+    price:       19.99
+  setup:
+    name:        setup
+    category_id: services
+    price:       22.99
+  installation:
+    name:        installation
+    category_id: services
+    price:       22.99
+  installationsetup:
+    name:        installation and setup
+    category_id: services
+    price:       30.00
+  ubuntu:
+    name:        ubuntu
+    category_id: software
+    price:       2.00
+  kubuntu:
+    name:        kubuntu
+    category_id: software
+    price:       2.00
+  xubuntu:
+    name:        xubuntu
+    category_id: software
+    price:       2.00
+  lubuntu:
+    name:        lubuntu
+    category_id: software
+    price:       2.00

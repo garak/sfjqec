@@ -1,0 +1,19 @@
+classes:
+
+  Category:
+    columns:
+      id:   ~
+      name: { type: varchar, required: true, primaryString: true }
+    propel_behaviors:
+      timestampable: ~
+      sluggable:     ~
+
+  Product:
+    columns:
+      id:          ~
+      name:        { type: varchar, required: true, primaryString: true }
+      category_id: { type: integer, required: true, foreignClass: Category, foreignReference: id, onDelete: cascade }
+      price:       { type: float, required: true }
+    propel_behaviors:
+      timestampable: ~
+      sluggable:     ~
