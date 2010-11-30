@@ -1,0 +1,3 @@
+[submodule "plugins/sfPropel15Plugin"]
+	path = plugins/sfPropel15Plugin
+	url = https://github.com/fzaninotto/sfPropel15Plugin.git
