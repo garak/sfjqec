@@ -26,7 +26,7 @@ all:
       classname:  PropelPDO
       dsn:        mysql:dbname=sfjqec;host=localhost
       username:   root
-      password:
+      password:   resole
       encoding:   utf8
       persistent: true
       pooling:    true

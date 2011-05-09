@@ -33,7 +33,7 @@ CREATE TABLE `product`
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(255)  NOT NULL,
 	`category_id` INTEGER  NOT NULL,
-	`price` FLOAT  NOT NULL,
+	`price` FLOAT(5,2)  NOT NULL,
 	`created_at` DATETIME,
 	`updated_at` DATETIME,
 	`slug` VARCHAR(255),

@@ -10,16 +10,21 @@
   </form>
 </div>
 
-<ul id="products">
+<div id="products">
   <h2>Products</h2>
-  <?php foreach ($products as $product): ?>
-  <li>
-    <?php echo $product ?>
-    <span class="cat"><?php echo $product->getCategory() ?></span>
-    <span class="price"><?php echo format_currency($product->getPrice(), 'EUR') ?></span>
-    <?php echo link_to('add to cart', 'cart_add', $product, 'class=add') ?>
-  </li>
-  <?php endforeach ?>
-</ul>
+  <ul>
+    <?php foreach ($products as $product): ?>
+    <li>
+      <?php echo $product ?>
+      <span class="cat"><?php echo $product->getCategory() ?></span>
+      <span class="price"><?php echo format_currency($product->getPrice(), 'EUR') ?></span>
+      <?php echo link_to('add to cart', 'cart_add', $product, 'class=add') ?>
+    </li>
+    <?php endforeach ?>
+    <?php if ($products->count() == 0): ?>
+    <li class="no">No results</li>
+    <?php endif ?>
+  </ul>
+</div>
 
 <?php include_component('default', 'cart') ?>

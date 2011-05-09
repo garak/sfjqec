@@ -29,6 +29,7 @@ class defaultActions extends sfActions
   {
     $this->form = new ProductFrontedFormFilter();
     $this->form->bind($request->getParameter($this->form->getName()));
+sleep(1);
     if ($this->form->isValid())
     {
       $this->getUser()->setFilters($this->form->getValues());
@@ -52,6 +53,7 @@ class defaultActions extends sfActions
    */
   public function executeCartAdd(sfWebRequest $request)
   {
+sleep(1);
     $this->product = $this->getRoute()->getProduct();
     $this->getUser()->cartAdd($this->product);
     $this->redirectUnless($request->isXmlHttpRequest(), '@homepage');
@@ -63,6 +65,7 @@ class defaultActions extends sfActions
    */
   public function executeCartRemove(sfWebRequest $request)
   {
+sleep(1);
     $this->product = $this->getRoute()->getProduct();
     $this->getUser()->cartRemove($this->product);
     $this->redirectUnless($request->isXmlHttpRequest(), '@homepage');

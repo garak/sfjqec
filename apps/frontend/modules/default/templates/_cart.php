@@ -6,7 +6,7 @@
   <?php $i = 0 ?>
   <?php foreach ($cart as $pid => $q): ?>
     <li id="item_<?php echo $pid ?>">
-      <?php echo $products->get($i) ?>
+      <em><?php echo $products->get($i) ?></em>
       <span class="price"><?php echo format_currency($products->get($i)->getPrice(), 'EUR') ?></span>
       <?php echo link_to('X', 'cart_remove', $products->get($i), 'class=remove') ?>
       <?php echo link_to('-', 'cart_decrease', $products->get($i), 'class=decrease') ?>

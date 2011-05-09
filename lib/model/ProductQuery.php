@@ -23,7 +23,7 @@ class ProductQuery extends BaseProductQuery
     }
     if (!empty($values['name']))
     {
-      $this->filterByName($values['name']);
+      $this->filterByName('%' . $values['name'] . '%');
     }
     if (!empty($values['price']))
     {

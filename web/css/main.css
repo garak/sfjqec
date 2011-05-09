@@ -10,7 +10,7 @@ a {
   text-shadow: 0 0 0 #000;
 }
 
-ul#products, div#cart ul {
+div#products ul, div#cart ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,35 +34,56 @@ div#filters input[type="text"] {
   width: 88px;
 }
 
-ul#products {
+div#products {
   border: 3px solid #000;
   float: left;
   padding: 10px;
   margin: 10px;
-  width: 400px;
+  width: 415px;
   box-shadow: 3px 3px 2px #ccc;
   -moz-box-shadow: 3px 3px 2px #ccc;
   -webkit-box-shadow: 3px 3px 2px #ccc;
 }
 
-ul#products li {
+div#products ul li {
   border: 1px solid #ccc;
   float: left;
-  width: 90px;
-  height: 90px;
+  width: 95px;
+  height: 95px;
   padding: 10px;
   margin: 10px;
   background: #fff;
 }
 
-ul#products li span.price {
+div#products ul li:hover {
+  background: #f0f0f0;
+}
+
+div#products ul li.no {
+  border-color: #c00;
+}
+
+div#products ul li span.price {
   display: block;
   margin: 5px 0 0;
 }
 
-ul#products li a.add {
+div#products ul li a.add {
   display: block;
-  margin: 3px 0 0;
+  margin: 5px 0 0;
+  font-size: 0.9em;
+}
+
+div#products ul li a.add:after {
+  content: ' ';
+  display: block;
+  float: right;
+  margin: 4px 0 0 0;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #444;
+  border-bottom: 5px solid transparent; 
 }
 
 div#cart {
@@ -83,9 +104,25 @@ div#cart ul {
  margin: 10px 0;
 }
 
-div#cart ul li a.increase, div#cart ul li a.decrease{
- border: 1px solid #ccc;
- padding: 0 3px;
+div#cart ul li {
+ margin: 5px 0;
+}
+
+div#cart ul li em {
+  min-width: 160px;
+  display: block;
+  float: left;
+  font-style: normal;
+}
+
+div#cart ul li a.increase, div#cart ul li a.decrease {
+  border: 1px solid #ccc;
+  padding: 0 3px;
+}
+
+div#cart ul li a.increase:hover, div#cart ul li a.decrease:hover {
+  border-color: #000;
+  background: #fff;
 }
 
 div#cart a#empty_cart {

@@ -15,6 +15,7 @@ default:
   stylesheets:    [ main ]
 
   javascripts:    [ jquery, sfjqec ]
+  #javascripts:    [ ]
 
   has_layout:     true
   layout:         layout
